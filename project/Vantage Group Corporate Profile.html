@@ -1,0 +1,1453 @@
+<!DOCTYPE html><html data-src-ver="a65a148a" lang="en" data-qb-installed="true"><plasmo-csui id="jobright-helper-plugin"></plasmo-csui><head>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vantage Group Developments — Corporate Investor Profile 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Serif:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+/* ---------- TOKENS ---------- */
+:root{
+  /* Palette — bone paper, deep ink, oxidised copper */
+  --paper:        #f3efe6;
+  --paper-2:      #ebe5d8;
+  --paper-edge:   #ddd4c1;
+  --ink:          #11212d;
+  --ink-2:        #1d2f3c;
+  --ink-soft:     #4a5763;
+  --ink-mute:     #7a8590;
+  --rule:         #c7bfae;
+  --rule-soft:    #ddd5c2;
+  --copper:       #a85a2a;
+  --copper-deep:  #7d3f1a;
+  --copper-soft:  #c9956c;
+  --gold:         #b08540;
+  --paper-dark:   #0c1820;
+  --paper-dark-2: #142532;
+
+  --serif: "Newsreader", "IBM Plex Serif", Georgia, serif;
+  --sans:  "IBM Plex Sans", system-ui, sans-serif;
+  --mono:  "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+  --pw: 210mm;
+  --ph: 297mm;
+  --margin-x: 15mm;
+  --margin-y: 12mm;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; background:#1a1a1a; color:var(--ink);
+  font-family:var(--sans); font-size:8.6pt; line-height:1.38;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  font-feature-settings:"ss01","ss02","kern","liga","cv11";
+}
+body{ padding:24px 0; }
+
+.deck{ display:flex; flex-direction:column; align-items:center; gap:18px; }
+
+.page{
+  width:var(--pw); height:auto; min-height:var(--ph);
+  background:var(--paper);
+  color:var(--ink);
+  position:relative;
+  overflow:visible;
+  padding-bottom:18mm;
+  box-shadow:0 30px 80px rgba(0,0,0,.45), 0 4px 12px rgba(0,0,0,.25);
+  page-break-after:always;
+  break-after:page;
+}
+.page.dark{ background:var(--paper-dark); color:#e7e1d2; }
+.page.dark{ --ink:#e7e1d2; --ink-soft:#aeb6be; --ink-mute:#7c8691; --rule:#2a3a48; --rule-soft:#1b2a36; --paper:var(--paper-dark); }
+
+/* page chrome */
+.frame{ position:relative; padding:var(--margin-y) var(--margin-x) 4mm; display:flex; flex-direction:column; min-height:calc(var(--ph) - 18mm); }
+.runhead{
+  display:flex; justify-content:space-between; align-items:center;
+  font-family:var(--mono); font-size:6.6pt; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-mute); padding-bottom:3mm; border-bottom:.5pt solid var(--rule);
+  flex-shrink:0;
+}
+.runhead .mark{ display:flex; align-items:center; gap:8px; color:var(--ink); }
+.runhead .mark .glyph{ width:14px; height:14px; }
+.runhead b{ color:var(--ink); font-weight:600; letter-spacing:.18em; }
+.runfoot{
+  position:absolute; left:var(--margin-x); right:var(--margin-x); bottom:6mm;
+  display:flex; justify-content:space-between; align-items:flex-end;
+  font-family:var(--mono); font-size:6.4pt; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-mute); padding-top:3mm; border-top:.5pt solid var(--rule);
+}
+.runfoot .num{ color:var(--ink); font-weight:600; }
+
+/* type */
+.eyebrow{ font-family:var(--mono); font-size:7.4pt; letter-spacing:.24em; text-transform:uppercase; color:var(--copper); font-weight:500; }
+.eyebrow.muted{ color:var(--ink-mute); }
+.section-no{ font-family:var(--mono); font-size:7.4pt; letter-spacing:.24em; color:var(--ink-mute); }
+h1.display{ font-family:var(--serif); font-weight:300; font-style:normal; font-size:64pt; line-height:.92; letter-spacing:-.02em; margin:0; color:var(--ink); }
+h1.display em{ font-style:italic; font-weight:300; color:var(--copper); }
+h2.head{ font-family:var(--serif); font-weight:400; font-size:24pt; line-height:1; letter-spacing:-.015em; margin:0; color:var(--ink); }
+h2.head em{ font-style:italic; color:var(--copper); }
+h3.sub{ font-family:var(--serif); font-weight:500; font-size:11pt; line-height:1.2; margin:0; letter-spacing:-.005em; }
+h4.kicker{ font-family:var(--sans); font-weight:600; font-size:7.6pt; letter-spacing:.14em; text-transform:uppercase; margin:0; color:var(--ink); }
+.lede{ font-family:var(--serif); font-weight:300; font-size:10.5pt; line-height:1.32; letter-spacing:-.005em; color:var(--ink-2); }
+.body p{ margin:0 0 5pt 0; color:var(--ink-2); }
+.body p:last-child{ margin-bottom:0; }
+.small{ font-size:7.4pt; line-height:1.35; color:var(--ink-soft); }
+.tiny{ font-family:var(--mono); font-size:7pt; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-mute); }
+.num{ font-variant-numeric:tabular-nums; font-feature-settings:"tnum","lnum"; }
+
+hr.rule{ border:0; border-top:.5pt solid var(--rule); margin:0; }
+hr.rule.copper{ border-top:.75pt solid var(--copper); }
+
+/* mark / glyph */
+.glyph-v{ display:inline-block; }
+.brand-line{ display:flex; align-items:center; gap:10px; }
+.brand-line .name{ font-family:var(--serif); font-size:11pt; letter-spacing:.02em; color:var(--ink); }
+.brand-line .sub{ font-family:var(--mono); font-size:7pt; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-mute); }
+
+/* utility grids */
+.grid{ display:grid; gap:4mm; }
+.g-2{ grid-template-columns:1fr 1fr; }
+.g-3{ grid-template-columns:repeat(3,1fr); }
+.g-4{ grid-template-columns:repeat(4,1fr); }
+.g-5{ grid-template-columns:repeat(5,1fr); }
+.g-6{ grid-template-columns:repeat(6,1fr); }
+
+/* cards */
+.card{ border:.5pt solid var(--rule); padding:4mm; background:rgba(255,255,255,.25); }
+.dark .card{ background:rgba(255,255,255,.03); border-color:var(--rule); }
+.card .lbl{ font-family:var(--mono); font-size:7pt; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); }
+
+/* tables */
+table.data{ width:100%; border-collapse:collapse; font-size:7.6pt; }
+table.data th, table.data td{ padding:3pt 4.5pt; text-align:left; vertical-align:top; }
+table.data thead th{
+  font-family:var(--mono); font-size:7.2pt; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--ink-mute); font-weight:500; border-bottom:.5pt solid var(--rule);
+}
+table.data tbody tr{ border-bottom:.4pt solid var(--rule-soft); }
+table.data tbody tr:last-child{ border-bottom:0; }
+table.data td.num, table.data th.num{ text-align:right; font-variant-numeric:tabular-nums; }
+table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--ink); }
+
+/* logo glyph */
+.vmark{
+  width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center;
+  border:.6pt solid var(--ink); color:var(--ink); font-family:var(--serif); font-weight:500; font-size:11pt;
+  letter-spacing:0; line-height:1;
+}
+.dark .vmark{ border-color:#e7e1d2; color:#e7e1d2; }
+
+/* placeholder image */
+.placeholder{ position:relative; background:
+  repeating-linear-gradient(135deg, rgba(17,33,45,.06) 0 8px, rgba(17,33,45,0) 8px 16px),
+  var(--paper-2);
+  border:.5pt solid var(--rule); display:flex; align-items:flex-end; justify-content:flex-start;
+  font-family:var(--mono); font-size:7pt; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute);
+}
+.placeholder span{ padding:6px 8px; }
+.dark .placeholder{ background:
+  repeating-linear-gradient(135deg, rgba(255,255,255,.04) 0 8px, rgba(255,255,255,0) 8px 16px),
+  #182734; border-color:#27384a; }
+
+/* misc accents */
+.copper{ color:var(--copper); }
+.ink-mute{ color:var(--ink-mute); }
+.tag{ display:inline-block; font-family:var(--mono); font-size:6.8pt; letter-spacing:.18em; text-transform:uppercase;
+  padding:3px 7px; border:.5pt solid var(--rule); color:var(--ink-soft); }
+.tag.copper{ color:var(--copper); border-color:var(--copper-soft); }
+.tag.solid{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+
+.kpi{ display:flex; flex-direction:column; gap:6px; }
+.kpi .v{ font-family:var(--serif); font-weight:400; font-size:22pt; line-height:.95; letter-spacing:-.02em; color:var(--ink); }
+.kpi .v em{ font-style:italic; color:var(--copper); font-weight:300; }
+.kpi .l{ font-family:var(--mono); font-size:7pt; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); }
+
+/* dotted leader for index lists */
+.leader{ display:flex; align-items:baseline; gap:8px; }
+.leader .dots{ flex:1; border-bottom:.5pt dotted var(--rule); transform:translateY(-3px); }
+
+/* page-specific helpers */
+.col-flow{ column-count:2; column-gap:8mm; column-rule:.5pt solid var(--rule-soft); }
+.col-flow p{ break-inside:avoid; }
+
+/* SVG mark */
+.vsvg{ width:22px; height:22px; }
+
+/* dark page chrome variants */
+.page.dark .runhead{ border-bottom-color:#2a3a48; color:#7c8691; }
+.page.dark .runhead b{ color:#e7e1d2; }
+.page.dark .runhead .mark{ color:#e7e1d2; }
+.page.dark .runfoot{ border-top-color:#2a3a48; color:#7c8691; }
+.page.dark .runfoot .num{ color:#e7e1d2; }
+.page.dark .eyebrow{ color:var(--copper-soft); }
+.page.dark .lede{ color:#cdd1d6; }
+.page.dark .body p{ color:#cdd1d6; }
+.page.dark .small{ color:#aeb6be; }
+.page.dark hr.rule{ border-top-color:#2a3a48; }
+.page.dark .card{ border-color:#27384a; }
+.page.dark table.data thead th{ border-bottom-color:#2a3a48; color:#7c8691; }
+.page.dark table.data tbody tr{ border-bottom-color:#1f2e3a; }
+.page.dark .tag{ border-color:#2a3a48; color:#aeb6be; }
+.page.dark .kpi .v{ color:#f1ead9; }
+
+/* subtle paper grain overlay */
+.page::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(1100px 700px at 90% -10%, rgba(168,90,42,.06), transparent 60%),
+    radial-gradient(900px 600px at -10% 110%, rgba(17,33,45,.06), transparent 60%);
+  mix-blend-mode:multiply;
+}
+.page.dark::after{
+  background:
+    radial-gradient(900px 700px at 100% 0%, rgba(168,90,42,.10), transparent 60%),
+    radial-gradient(900px 600px at 0% 100%, rgba(176,133,64,.06), transparent 60%);
+  mix-blend-mode:screen;
+}
+.frame{ z-index:2; }
+
+/* bottom strap (used on cover) */
+.strap{
+  position:absolute; left:0; right:0; bottom:0;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:10mm var(--margin-x);
+  font-family:var(--mono); font-size:7pt; letter-spacing:.2em; text-transform:uppercase;
+  color:#aeb6be; border-top:.5pt solid #2a3a48;
+}
+.strap .dot{ width:5px; height:5px; background:var(--copper); display:inline-block; margin-right:6px; transform:translateY(-1px); }
+
+/* small bullet rule */
+.bul{ display:inline-block; width:14px; height:.6pt; background:var(--copper); transform:translateY(-3px); margin-right:8px; }
+
+/* index list (cover) */
+.idx{ display:flex; flex-direction:column; gap:10pt; }
+.idx .row{ display:grid; grid-template-columns:34px 1fr auto; gap:14px; align-items:baseline; }
+.idx .row .no{ font-family:var(--mono); font-size:8pt; letter-spacing:.14em; color:var(--copper-soft); }
+.idx .row .ttl{ font-family:var(--serif); font-size:14pt; letter-spacing:-.005em; color:#f1ead9; }
+.idx .row .sub{ font-family:var(--mono); font-size:7pt; letter-spacing:.18em; text-transform:uppercase; color:#7c8691; }
+
+/* divider with dot */
+.dotrule{ display:flex; align-items:center; gap:8px; }
+.dotrule::before, .dotrule::after{ content:""; flex:1; border-top:.5pt solid var(--rule); }
+.dotrule .d{ width:5px; height:5px; background:var(--copper); }
+
+/* CHAIRMAN sig */
+.sig{ font-family:"Newsreader", serif; font-style:italic; font-weight:300; font-size:22pt; letter-spacing:.01em; color:var(--ink); }
+
+/* PIPELINE step pills */
+.steps{ display:grid; grid-template-columns:repeat(5,1fr); gap:0; border:.5pt solid var(--rule); }
+.steps .step{ padding:4mm; border-right:.5pt solid var(--rule); display:flex; flex-direction:column; gap:4px; }
+.steps .step:last-child{ border-right:0; }
+.steps .step .n{ font-family:var(--mono); font-size:7pt; letter-spacing:.18em; color:var(--copper); }
+.steps .step .t{ font-family:var(--serif); font-size:10pt; }
+.steps .step .d{ font-size:7pt; line-height:1.3; color:var(--ink-soft); }
+
+/* leader card (10) */
+.leader-card{ display:flex; gap:7px; padding:3mm; border:.5pt solid var(--rule); }
+.leader-card .av{ width:22px; height:22px; border:.5pt solid var(--ink); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:7pt; letter-spacing:.06em; color:var(--ink); flex-shrink:0; }
+.leader-card .nm{ font-family:var(--serif); font-size:9.6pt; letter-spacing:-.005em; color:var(--ink); line-height:1.15; }
+.leader-card .tt{ font-family:var(--mono); font-size:6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--copper); margin-top:2px; }
+.leader-card .lo{ font-family:var(--mono); font-size:5.8pt; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); margin-top:2px; }
+.leader-card .bio{ font-size:6.8pt; line-height:1.32; color:var(--ink-soft); margin-top:3px; }
+
+/* mineral chip */
+.chip{ border:.5pt solid var(--rule); padding:2.6mm; display:flex; flex-direction:column; gap:2px; }
+.chip .nm{ font-family:var(--serif); font-size:9.6pt; }
+.chip .lo{ font-family:var(--mono); font-size:6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); }
+.chip .ds{ font-size:6.8pt; line-height:1.3; color:var(--ink-soft); margin-top:2px; }
+
+/* copper bar accent */
+.bar-c{ display:block; width:24px; height:2px; background:var(--copper); }
+
+/* cover hero */
+.hero-rule{ width:100%; border-top:.75pt solid var(--copper); margin:8mm 0; }
+
+/* watermark numerals on covers */
+.wmark{
+  position:absolute; right:-30mm; bottom:-30mm; font-family:var(--serif); font-weight:300; color:rgba(255,255,255,.04);
+  font-size:380pt; line-height:.85; letter-spacing:-.04em; pointer-events:none;
+}
+
+@media print{
+  body{ background:#fff; padding:0; }
+  .deck{ gap:0; }
+  .page{ box-shadow:none; margin:0; }
+  @page{ size:A4; margin:0; }
+}
+</style>
+</head>
+<body style="cursor: crosshair;" data-cc-id="cc-1">
+
+<!-- ========================================================== -->
+<!-- A reusable V mark as inline SVG via symbol ref               -->
+<!-- ========================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="vmark" viewBox="0 0 24 24">
+      <rect x=".75" y=".75" width="22.5" height="22.5" fill="none" stroke="currentColor" stroke-width="1"></rect>
+      <path d="M5 6 L12 18 L19 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="miter"></path>
+    </symbol>
+    <symbol id="diamond" viewBox="0 0 10 10"><path d="M5 0 L10 5 L5 10 L0 5 Z" fill="currentColor"></path></symbol>
+  </defs>
+</svg>
+
+<div class="deck">
+
+<!-- ============== PAGE 1 — COVER ============== -->
+<section class="page dark" id="p1">
+  <div class="wmark num">25</div>
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg" style="color:#e7e1d2"><use href="#vmark"></use></svg><b>VANTAGE&nbsp;GROUP</b><span style="color:#7c8691">DEVELOPMENTS</span></div>
+      <div>STRICTLY PRIVATE &amp; CONFIDENTIAL</div>
+    </div>
+
+    <div style="margin-top:18mm; display:flex; justify-content:space-between; align-items:flex-end; gap:12mm;">
+      <div style="flex:1">
+        <div class="eyebrow" style="color:var(--copper-soft);">Corporate Investor Profile · MMXXV</div>
+        <h1 class="display" style="margin-top:8mm; color:#f1ead9; font-size:78pt; line-height:.9;">
+          Corporate<br>
+          Investor<br>
+          <em>Profile.</em>
+        </h1>
+        <div style="margin-top:10mm; max-width:130mm;" class="lede">
+          A multi-sector investment group operating across institutional real estate, industrial infrastructure, mineral intelligence, chemical commodities, and global markets trading.
+        </div>
+      </div>
+      <div style="width:72mm; flex-shrink:0;">
+        <div style="aspect-ratio:3/4; overflow:hidden; border:.5pt solid #2a3a48; background:#0c1820;">
+          <img src="assets/chairman.jpg" alt="Omer Farooq Kayani — Chairman & Founder" style="width:100%; height:100%; object-fit:cover; object-position:center 22%; filter:contrast(1.04) saturate(.92);" />
+        </div>
+        <div class="tiny" style="margin-top:4mm; color:#7c8691;">Omer Farooq Kayani · Chairman &amp; Founder</div>
+      </div>
+    </div>
+
+    <div style="margin-top:14mm; border-top:.5pt solid #2a3a48; padding-top:6mm;">
+      <div class="eyebrow" style="color:#7c8691;">A Multi-Sector Investment Group · Five Verticals</div>
+      <div class="idx" style="margin-top:6mm;">
+        <div class="row"><span class="no">01</span><span class="ttl">Real Estate Development</span><span class="sub">VantageTown · Community Living &amp; Investment</span></div>
+        <div class="row"><span class="no">02</span><span class="ttl">Industrial Infrastructure</span><span class="sub">VantEdge Parks · Grade-A Logistics &amp; WorkNest™</span></div>
+        <div class="row"><span class="no">03</span><span class="ttl">Mineral Intelligence</span><span class="sub">RareOres · Critical Minerals · Sourcing &amp; Trading</span></div>
+        <div class="row"><span class="no">04</span><span class="ttl">Chemical Commodities</span><span class="sub">Vantage Exports · Industrial Solvents &amp; Specialty</span></div>
+        <div class="row"><span class="no">05</span><span class="ttl">Global Markets Trading</span><span class="sub">Commodities · Equities · Digital Assets</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="strap">
+    <div><span class="dot"></span>Islamabad (HQ) &nbsp;·&nbsp; Lahore &nbsp;·&nbsp; Johor Bahru &nbsp;·&nbsp; Istanbul</div>
+    <div>Vantage Developers Pvt. Ltd. &nbsp;·&nbsp; vantagedevelopers.com.pk &nbsp;·&nbsp; 2025</div>
+  </div>
+</section>
+
+<!-- ============== PAGE 2 — GROUP OVERVIEW ============== -->
+<section class="page" id="p2">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>Corporate Investor Profile · 2025</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:54mm 1fr; gap:12mm; margin-top:8mm;">
+      <div>
+        <div class="section-no">§ 01</div>
+        <div class="eyebrow" style="margin-top:6pt;">Group Overview</div>
+        <h2 class="head" style="margin-top:10mm;">Building <em>Assets.</em><br>Trading <em>Markets.</em></h2>
+        <div class="bar-c" style="margin-top:8mm;"></div>
+        <div class="small" style="margin-top:5mm; max-width:48mm;">
+          A privately held, multi-sector investment and development group with a twenty-year track record across Pakistan, Malaysia &amp; Turkey.
+        </div>
+      </div>
+
+      <div class="body" style="font-size:9.6pt;">
+        <p>Vantage Group Developments is a privately held, multi-sector investment and development group with a twenty-year track record of creating institutional-grade real estate, industrial infrastructure, and global trading operations across Pakistan, Malaysia, and Turkey.</p>
+        <p>Founded by Chairman <b>Omer Farooq Kayani</b>, the Group operates through Vantage Developers Pvt. Ltd. (VDL) — headquartered in Islamabad, Pakistan's federal capital — deploying capital and expertise across five distinct verticals from four international offices.</p>
+        <p>The mandate is disciplined in ambition: identify structural opportunity across real estate cycles, industrial gaps, critical-minerals markets, and global commodity flows — and convert that intelligence into lasting, compounding assets.</p>
+        <p>The Chairman's positioning — <em>"I create assets and trade global markets"</em> — captures the dual mandate driving returns: hard-asset creation combined with an active global trading book.</p>
+        <p>The Group now sits at the intersection of three transformational themes: Pakistan's industrial modernisation, the global critical-minerals supercycle, and the acceleration of cross-border chemical and commodity trade through Turkey and Southeast Asia.</p>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:10mm 0 6mm;">
+    <div class="eyebrow">Group Divisions</div>
+
+    <div class="grid g-5" style="margin-top:5mm; gap:0; border:.5pt solid var(--rule);">
+      <!-- 5 division cards -->
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">01 · B2C</div>
+        <h3 class="sub" style="margin-top:6pt;">VantageTown</h3>
+        <div class="tiny" style="margin-top:2pt;">Real Estate</div>
+        <p class="small" style="margin-top:6pt; font-size:8pt;">Premium master-planned residential communities. Curated lifestyles, long-term capital appreciation, institutional-quality development for homebuyers and NRP investors.</p>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">02 · B2B</div>
+        <h3 class="sub" style="margin-top:6pt;">VantEdge Parks</h3>
+        <div class="tiny" style="margin-top:2pt;">Industrial Real Estate</div>
+        <p class="small" style="margin-top:6pt; font-size:8pt;">Grade-A industrial parks with WorkNest™ workforce residences across Pakistan's high-growth corridors. The category-defining response to a Grade-A deficit.</p>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">03 · GLOBAL</div>
+        <h3 class="sub" style="margin-top:6pt;">RareOres</h3>
+        <div class="tiny" style="margin-top:2pt;">Mineral Intelligence</div>
+        <p class="small" style="margin-top:6pt; font-size:8pt;">Pakistan's first institutional-grade mineral intelligence, sourcing and trading platform — bridging a $6T+ endowment to global industrial demand across 40+ countries.</p>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">04 · MULTI-MARKET</div>
+        <h3 class="sub" style="margin-top:6pt;">Vantage Exports</h3>
+        <div class="tiny" style="margin-top:2pt;">Chemical Commodities</div>
+        <p class="small" style="margin-top:6pt; font-size:8pt;">Multi-product industrial chemical trading with operations in Turkey, Pakistan and South Africa. Six core products. $2.5M Year-1 revenue target.</p>
+      </div>
+      <div style="padding:5mm;">
+        <div class="tiny copper">05 · PROP-DESK</div>
+        <h3 class="sub" style="margin-top:6pt;">Global Markets</h3>
+        <div class="tiny" style="margin-top:2pt;">Proprietary Trading</div>
+        <p class="small" style="margin-top:6pt; font-size:8pt;">Active proprietary book in physical commodities, equities and digital assets. Anchored from Istanbul — the bridge between European markets, GCC capital and South Asian growth.</p>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:10mm 0 6mm;">
+
+    <div class="grid g-5" style="margin-top:0; gap:6mm;">
+      <div class="kpi"><div class="v num">20<em>+</em></div><div class="l">Years Operation</div></div>
+      <div class="kpi"><div class="v num">5</div><div class="l">Business Verticals</div></div>
+      <div class="kpi"><div class="v num">4</div><div class="l">International Offices</div></div>
+      <div class="kpi"><div class="v num">3</div><div class="l">Continents Active</div></div>
+      <div class="kpi"><div class="v">$<em>B+</em></div><div class="l">Multi-Sector Portfolio</div></div>
+    </div>
+
+    <div style="margin-top:auto; padding-top:8mm;" class="grid g-4">
+      <div>
+        <div class="tiny">VantageTown</div>
+        <div class="small" style="font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em;">vantagetown.com</div>
+      </div>
+      <div>
+        <div class="tiny">VantEdge Parks</div>
+        <div class="small" style="font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em;">vantedge.com</div>
+      </div>
+      <div>
+        <div class="tiny">RareOres · Vantage Exports</div>
+        <div class="small" style="font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em;">rareores.com · vantageexports.com</div>
+      </div>
+      <div>
+        <div class="tiny">Group Enquiries</div>
+        <div class="small" style="font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em;">connect@vantagedevelopers.com.pk</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="runfoot">
+    <div>Vantage Group · Building Pakistan's Industrial Future</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">02</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 3 — CHAIRMAN'S STATEMENT ============== -->
+<section class="page" id="p3">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 02 · Chairman's Statement</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:60mm 1fr; gap:14mm; margin-top:10mm; flex:1;">
+      <div>
+        <div style="aspect-ratio:3/4; overflow:hidden; border:.5pt solid var(--rule); background:var(--paper-2);">
+          <img src="assets/chairman.jpg" alt="Omer Farooq Kayani — Chairman & Founder" style="width:100%; height:100%; object-fit:cover; object-position:center 22%; filter:grayscale(.18) contrast(1.05) saturate(.85);" />
+        </div>
+        <div style="margin-top:6mm;">
+          <div class="tiny copper">Chairman &amp; Founder</div>
+          <div class="sig" style="margin-top:6pt;">Omer F. Kayani</div>
+          <div class="small" style="margin-top:4pt; font-family:var(--mono); font-size:7pt; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute);">Islamabad · Lahore · Johor Bahru · Istanbul</div>
+        </div>
+        <div style="margin-top:8mm;">
+          <hr class="rule copper">
+          <div class="tiny" style="margin-top:6pt;">Reading time</div>
+          <div class="num" style="font-family:var(--serif); font-size:18pt; line-height:1; margin-top:4pt;">3 min</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-no">§ 02</div>
+        <div class="eyebrow" style="margin-top:6pt;">A Direct Communication</div>
+        <h2 class="head" style="margin-top:6mm; font-size:30pt;">From the desk of<br>the <em>Chairman</em>.</h2>
+        <hr class="rule copper" style="margin:8mm 0;">
+
+        <div class="body" style="font-size:9.5pt;">
+          <p>The Vantage Group was built on a conviction that still holds: Pakistan's transformation into a multi-trillion-dollar economy is not a question of <em>whether</em> — it is a question of <em>when</em>. Those who build the right assets, in the right structures, positioned on the right themes today will disproportionately capture that transformation.</p>
+          <p>Since our establishment we have delivered across residential communities, government defence infrastructure, diplomatic facilities, and institutional mandates. We built with DHA. We built for the Pakistan Air Force. We built for the Royal Embassy of the Kingdom of Saudi Arabia. Our track record is concrete, verifiable, and public — not a prospectus claim.</p>
+          <p>We are now entering a more ambitious chapter. <b>VantEdge Parks</b> brings institutional-grade industrial real estate to Pakistani markets that have never seen it. <b>RareOres</b> positions the Group as Pakistan's first institutional mineral-intelligence platform at the precise moment the world is racing for critical minerals. <b>Vantage Exports</b> is building a multi-product chemical trading operation spanning Turkey, Pakistan and South Africa — three markets, six products, exponential margins.</p>
+          <p>Our Malaysia office in Johor Bahru is an operational choice, not a symbol. Johor sits at the gateway of Southeast Asian capital flows, adjacent to Singapore's financial infrastructure and ASEAN's most dynamic growth corridor. It gives the Group a permanent foothold in Asia's most important emerging investment zone.</p>
+          <p>We are selective about who we build with. We do not seek volume of capital — we seek alignment of vision. The investors who work with Vantage will find a group that executes precisely what it proposes, communicates with directness, and compounds returns across multiple asset classes and geographies simultaneously.</p>
+          <p style="margin-top:10pt;"><em>I create assets and trade global markets. Everything Vantage builds serves that singular mission.</em></p>
+        </div>
+
+        <div style="margin-top:10mm; display:flex; justify-content:space-between; align-items:flex-end; border-top:.5pt solid var(--rule); padding-top:6mm;">
+          <div>
+            <div class="sig">Omer Farooq Kayani</div>
+            <div class="tiny" style="margin-top:4pt;">Chairman &amp; Founder · Vantage Group Developments</div>
+          </div>
+          <div class="tiny">2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>Chairman's Statement</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">03</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 4 — VANTEDGE PARKS ============== -->
+<section class="page" id="p4">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 03 · Flagship · Industrial Real Estate</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 70mm; gap:10mm; margin-top:8mm;">
+      <div>
+        <div class="section-no">§ 03 · Flagship Project</div>
+        <div class="eyebrow" style="margin-top:6pt;">Industrial Real Estate</div>
+        <h2 class="head" style="margin-top:6mm;">VantEdge <em>Parks</em></h2>
+        <div class="tiny" style="margin-top:4mm;">Grade-A Industrial Infrastructure · WorkNest™ Workforce Residences · vantedge.com</div>
+        <p class="lede" style="margin-top:8mm; font-size:11.5pt;">
+          Vantage Group's institutional industrial real-estate platform — engineered to fill the structural void in Pakistan's manufacturing and logistics landscape: the near-total absence of Grade-A, purpose-built industrial infrastructure to global standards.
+        </p>
+      </div>
+      <div style="aspect-ratio:1/1; overflow:hidden; border:.5pt solid var(--rule); background:var(--paper-2);">
+        <img src="assets/vantedge-park-clean.png" alt="VantEdge Park — isometric" style="width:100%; height:100%; object-fit:cover; object-position:center;" />
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:8mm 0;">
+
+    <div style="display:grid; grid-template-columns:1.05fr .95fr; gap:10mm;">
+      <div>
+        <h4 class="kicker">Park Specification</h4>
+        <table class="data" style="margin-top:4mm;">
+          <tbody>
+            <tr><td class="metric">Bay Size</td><td>10,000 – 50,000 sq.ft.</td></tr>
+            <tr><td class="metric">Eave Clearance</td><td>9 – 12 metres</td></tr>
+            <tr><td class="metric">Power</td><td>Three-phase industrial</td></tr>
+            <tr><td class="metric">Revenue Model</td><td>Triple Net Lease · VPMC managed</td></tr>
+            <tr><td class="metric">Entry Level</td><td>PKR 32 Lakhs (WorkNest T1)</td></tr>
+            <tr><td class="metric">Target Zones</td><td>Punjab &amp; KPK Corridors</td></tr>
+            <tr><td class="metric">Management</td><td>100% VPMC — Passive Investor</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="kicker" style="margin-top:8mm;">Market Opportunity</h4>
+        <p class="small" style="margin-top:4mm;">Pakistan's SEZ and industrial-policy cycle is at a structural inflection. CPEC infrastructure has matured. Foreign manufacturing interest — textiles, pharmaceuticals, logistics, consumer goods — is compounding. The supply of Grade-A industrial real estate in Pakistan's secondary markets is effectively zero.</p>
+        <p class="small">VantEdge is building the category-defining response before the window closes — and intends to become the dominant institutional industrial real-estate operator across Pakistan's top six industrial corridors by 2030.</p>
+      </div>
+
+      <div>
+        <h4 class="kicker">WorkNest™ Workforce Residence Compound</h4>
+        <p class="small" style="margin-top:4mm;">A structural moat. By co-locating workforce residences with warehouse infrastructure on a single compound, VantEdge eliminates the industrial employer's core headache — workforce proximity and daily attrition. No competing product exists at this standard in Pakistan's secondary industrial markets.</p>
+
+        <div class="grid g-4" style="gap:0; border:.5pt solid var(--rule); margin-top:5mm;">
+          <div style="padding:4mm; border-right:.5pt solid var(--rule);">
+            <div class="tiny copper">Tier 1</div>
+            <div class="num" style="font-family:var(--serif); font-size:18pt; line-height:1; margin-top:6pt;">PKR&nbsp;32L</div>
+            <div class="small" style="font-size:7.6pt; margin-top:4pt;">Studio · Entry</div>
+          </div>
+          <div style="padding:4mm; border-right:.5pt solid var(--rule);">
+            <div class="tiny copper">Tier 2</div>
+            <div class="num" style="font-family:var(--serif); font-size:18pt; line-height:1; margin-top:6pt;">PKR&nbsp;44L</div>
+            <div class="small" style="font-size:7.6pt; margin-top:4pt;">1 BR Compact</div>
+          </div>
+          <div style="padding:4mm; border-right:.5pt solid var(--rule);">
+            <div class="tiny copper">Tier 3</div>
+            <div class="num" style="font-family:var(--serif); font-size:18pt; line-height:1; margin-top:6pt;">PKR&nbsp;55L</div>
+            <div class="small" style="font-size:7.6pt; margin-top:4pt;">1 BR Premium</div>
+          </div>
+          <div style="padding:4mm;">
+            <div class="tiny copper">Tier 4</div>
+            <div class="num" style="font-family:var(--serif); font-size:18pt; line-height:1; margin-top:6pt;">PKR&nbsp;67L</div>
+            <div class="small" style="font-size:7.6pt; margin-top:4pt;">2 BR Family</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:5mm;">
+          <div class="tiny copper">Investor Mechanic</div>
+          <p class="small" style="margin:4mm 0 0;">Passive income on workforce residences. VPMC-managed. Triple-Net Lease structure. Entry from PKR 32L. Investor performs zero operational management.</p>
+        </div>
+
+        <div style="margin-top:5mm; display:flex; gap:6px; flex-wrap:wrap;">
+          <span class="tag copper">Subscriptions Open</span>
+          <span class="tag">Punjab Corridor · Phase I</span>
+          <span class="tag">KPK Corridor · Pipeline</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>VantEdge Parks · Pakistan's First Institutional Industrial Platform</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">04</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 5 — RAREORES ============== -->
+<section class="page" id="p5">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 04 · Mineral Intelligence &amp; Trading</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 70mm; gap:10mm; margin-top:8mm;">
+      <div>
+        <div class="section-no">§ 04 · Platform</div>
+        <div class="eyebrow" style="margin-top:6pt;">Mineral Intelligence</div>
+        <h2 class="head" style="margin-top:6mm;">Rare<em>Ores.</em></h2>
+        <div class="tiny" style="margin-top:4mm;">Pakistan's No.1 Mineral Intelligence Platform · rareores.com</div>
+        <p class="lede" style="margin-top:8mm; font-size:11.5pt;">
+          A specialist mineral intelligence, sourcing and trading platform purpose-built for the critical-minerals supercycle. Pakistan holds an estimated <span class="copper">$6 trillion+</span> in mineral endowment — yet remains almost entirely unexploited due to absent institutional infrastructure between the geological asset and the global buyer.
+        </p>
+      </div>
+      <div>
+        <div style="aspect-ratio:3/4; overflow:hidden; border:.5pt solid var(--rule); background:var(--paper-2);">
+          <img src="assets/rareores-map-clean.png" alt="Active mine positions across Pakistan" style="width:100%; height:100%; object-fit:cover; object-position:center;" />
+        </div>
+        <div class="grid g-2" style="gap:4mm; margin-top:4mm;">
+          <div class="card" style="padding:4mm;">
+            <div class="tiny copper">Buyer Markets</div>
+            <div class="num" style="font-family:var(--serif); font-size:22pt; line-height:1; margin-top:4pt;">40<span class="copper">+</span></div>
+          </div>
+          <div class="card" style="padding:4mm;">
+            <div class="tiny copper">Endowment</div>
+            <div class="num" style="font-family:var(--serif); font-size:22pt; line-height:1; margin-top:4pt;">$6T<span class="copper">+</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:7mm 0 5mm;">
+
+    <h4 class="kicker">Active Mine Positions</h4>
+    <div class="grid g-6" style="margin-top:4mm;">
+      <div class="chip"><div class="nm">Talc</div><div class="lo">Shangla · KPK</div></div>
+      <div class="chip"><div class="nm">Emerald</div><div class="lo">Swat Valley · KPK</div></div>
+      <div class="chip"><div class="nm">Coal</div><div class="lo">Balochistan · KPK</div></div>
+      <div class="chip"><div class="nm">Chromite</div><div class="lo">Muslim Bagh · Bal.</div></div>
+      <div class="chip"><div class="nm">Marble</div><div class="lo">KPK · AJK · Bal.</div></div>
+      <div class="chip"><div class="nm">Gypsum</div><div class="lo">Punjab · Balochistan</div></div>
+    </div>
+
+    <h4 class="kicker" style="margin-top:7mm;">Full Mineral Portfolio</h4>
+    <div class="grid g-4" style="margin-top:4mm;">
+      <div class="chip"><div class="nm">Copper</div><div class="lo">Chagai · Balochistan</div><div class="ds">Reko Diq — 5.9B-ton deposit</div></div>
+      <div class="chip"><div class="nm">Lithium</div><div class="lo">Washuk · Balochistan</div><div class="ds">EV-battery critical · exploration</div></div>
+      <div class="chip"><div class="nm">Antimony</div><div class="lo">Waziristan · Hazara</div><div class="ds">Defence supply chain · $40K / MT</div></div>
+      <div class="chip"><div class="nm">Barite</div><div class="lo">Khuzdar · Balochistan</div><div class="ds">World's 4th-largest reserves</div></div>
+      <div class="chip"><div class="nm">Rock Salt</div><div class="lo">Khewra · Punjab</div><div class="ds">Largest salt mine in the world</div></div>
+      <div class="chip"><div class="nm">Gold / Silver</div><div class="lo">Gilgit-Baltistan</div><div class="ds">Alluvial &amp; hard-rock extraction</div></div>
+      <div class="chip"><div class="nm">Rare Earths</div><div class="lo">Balochistan · KPK</div><div class="ds">Neodymium, Cerium · EV / tech</div></div>
+      <div class="chip"><div class="nm">Phosphate</div><div class="lo">NWFP · Punjab</div><div class="ds">Fertiliser input · regional demand</div></div>
+    </div>
+
+    <h4 class="kicker" style="margin-top:7mm;">Government &amp; Institutional Collaborations</h4>
+    <div class="grid g-3" style="margin-top:4mm; gap:0; border:.5pt solid var(--rule);">
+      <div style="padding:4mm; border-right:.5pt solid var(--rule); border-bottom:.5pt solid var(--rule);">
+        <div class="tiny copper">Pakistan</div>
+        <p class="small" style="margin-top:3pt; font-size:7.8pt;">SIFC Minerals Task Force · GSP (Geological Survey of Pakistan) · TDAP Export Support · Provincial Mines Departments — KPK, Balochistan, Punjab.</p>
+      </div>
+      <div style="padding:4mm; border-right:.5pt solid var(--rule); border-bottom:.5pt solid var(--rule);">
+        <div class="tiny copper">Saudi Arabia</div>
+        <p class="small" style="margin-top:3pt; font-size:7.8pt;">MAADEN (Saudi Arabian Mining Co.) · Saudi Geological Survey — JV exploration discussions on copper &amp; rare earths.</p>
+      </div>
+      <div style="padding:4mm; border-bottom:.5pt solid var(--rule);">
+        <div class="tiny copper">China</div>
+        <p class="small" style="margin-top:3pt; font-size:7.8pt;">CMGE (China Minmetals) · Sinosteel — offtake discussions for chromite and copper concentrate.</p>
+      </div>
+      <div style="padding:4mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">Turkey</div>
+        <p class="small" style="margin-top:3pt; font-size:7.8pt;">Etibank Mineral Corp · Istanbul Minerals Exchange — chromite and boron sourcing pipeline.</p>
+      </div>
+      <div style="padding:4mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">South Africa</div>
+        <p class="small" style="margin-top:3pt; font-size:7.8pt;">DMRE (Dept. of Mineral Resources &amp; Energy) — entry planned for manganese and PGM sourcing networks.</p>
+      </div>
+      <div style="padding:4mm;">
+        <div class="tiny copper">Kazakhstan</div>
+        <p class="small" style="margin-top:3pt; font-size:7.8pt;">KazMinerals partnership pipeline · Rare-earth and uranium market access via bilateral trade.</p>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>RareOres · Becoming Pakistan's No.1 Mineral Intelligence Platform</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">05</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 6 — RAREORES FINANCIALS ============== -->
+<section class="page" id="p6">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 04 · RareOres · Five-Year Projection</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 78mm; gap:10mm; margin-top:8mm;">
+      <div>
+        <div class="section-no">§ 04 · Financials</div>
+        <div class="eyebrow" style="margin-top:6pt;">From Platform to Empire</div>
+        <h2 class="head" style="margin-top:6mm; font-size:30pt;">From <em>Platform</em><br>to <em>Global Mineral</em><br>Empire.</h2>
+      </div>
+      <div>
+        <h4 class="kicker">Revenue Drivers</h4>
+        <div style="margin-top:4mm; display:grid; gap:3mm;">
+          <div class="card" style="padding:4mm;">
+            <div class="tiny copper">Direct Trading</div>
+            <p class="small" style="margin-top:3pt; font-size:7.8pt;">Sourcing &amp; export facilitation. High-volume minerals: coal, marble, chromite, gypsum. Growing $200K (Y1) → $12M+ (Y5).</p>
+          </div>
+          <div class="card" style="padding:4mm;">
+            <div class="tiny copper">Platform Subscriptions</div>
+            <p class="small" style="margin-top:3pt; font-size:7.8pt;">Free / Pro $200/mo / Elite $800/mo / Institutional $3,000/mo. MRR $4K (Y1) → $120K+ (Y5).</p>
+          </div>
+          <div class="card" style="padding:4mm;">
+            <div class="tiny copper">Buyer-Agent Retainers</div>
+            <p class="small" style="margin-top:3pt; font-size:7.8pt;">Retained buyer-agent contracts at $3,000 – $7,000 / month. 3 contracts (Y1) → 20+ (Y5).</p>
+          </div>
+          <div class="card" style="padding:4mm;">
+            <div class="tiny copper">Escrow &amp; Facilitation</div>
+            <p class="small" style="margin-top:3pt; font-size:7.8pt;">Transaction escrow for high-value gemstone &amp; mineral trades · 2–3% fee. Launch Y2. $50K (Y2) → $800K (Y5).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:8mm 0 5mm;">
+    <h4 class="kicker">Five-Year Financial Projections (USD)</h4>
+
+    <table class="data" style="margin-top:4mm;">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th class="num">Year 1</th>
+          <th class="num">Year 2</th>
+          <th class="num">Year 3</th>
+          <th class="num">Year 4</th>
+          <th class="num">Year 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="metric">Gross Revenue</td><td class="num">$420K</td><td class="num">$1.8M</td><td class="num">$5.2M</td><td class="num">$12.5M</td><td class="num">$28.0M</td></tr>
+        <tr><td class="metric">Gross Profit</td><td class="num">$210K</td><td class="num">$960K</td><td class="num">$3.1M</td><td class="num">$7.8M</td><td class="num">$18.5M</td></tr>
+        <tr><td class="metric">Gross Margin</td><td class="num">50%</td><td class="num">53%</td><td class="num">60%</td><td class="num">62%</td><td class="num">66%</td></tr>
+        <tr><td class="metric">Net Profit</td><td class="num">$95K</td><td class="num">$520K</td><td class="num">$2.1M</td><td class="num">$6.0M</td><td class="num">$14.8M</td></tr>
+        <tr><td class="metric">Net Margin</td><td class="num">23%</td><td class="num">29%</td><td class="num">40%</td><td class="num">48%</td><td class="num">53%</td></tr>
+        <tr><td class="metric">YoY Revenue Growth</td><td class="num">—</td><td class="num">+329%</td><td class="num">+189%</td><td class="num">+140%</td><td class="num">+124%</td></tr>
+        <tr><td class="metric">Active Buyer Markets</td><td class="num">8</td><td class="num">18</td><td class="num">32</td><td class="num">42</td><td class="num">55+</td></tr>
+        <tr><td class="metric">Platform Users</td><td class="num">800</td><td class="num">3,500</td><td class="num">9,000</td><td class="num">18,000</td><td class="num">35,000+</td></tr>
+        <tr><td class="metric">Minerals Traded</td><td class="num">6</td><td class="num">12</td><td class="num">18</td><td class="num">24</td><td class="num">30+</td></tr>
+      </tbody>
+    </table>
+
+    <hr class="rule" style="margin:8mm 0 5mm;">
+    <h4 class="kicker">Milestones · Valuation Path</h4>
+
+    <div class="grid g-5" style="margin-top:4mm; gap:0; border:.5pt solid var(--rule);">
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">Year 1</div>
+        <div class="num" style="font-family:var(--serif); font-size:24pt; line-height:1; margin-top:6pt;">$1M</div>
+        <div class="small" style="margin-top:5pt; font-size:7.8pt;">Platform launch. First 800 users.</div>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">Year 2</div>
+        <div class="num" style="font-family:var(--serif); font-size:24pt; line-height:1; margin-top:6pt;">$5M</div>
+        <div class="small" style="margin-top:5pt; font-size:7.8pt;">Cross $1M net profit. 18 buyer markets.</div>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">Year 3</div>
+        <div class="num" style="font-family:var(--serif); font-size:24pt; line-height:1; margin-top:6pt;">$25M</div>
+        <div class="small" style="margin-top:5pt; font-size:7.8pt;">Cross $2M net profit. Global rollout.</div>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">Year 4</div>
+        <div class="num" style="font-family:var(--serif); font-size:24pt; line-height:1; margin-top:6pt;">$75M</div>
+        <div class="small" style="margin-top:5pt; font-size:7.8pt;">Cross $6M net profit. Labuan licence.</div>
+      </div>
+      <div style="padding:5mm;">
+        <div class="tiny copper">Year 5</div>
+        <div class="num" style="font-family:var(--serif); font-size:24pt; line-height:1; margin-top:6pt;">$200M<span class="copper">+</span></div>
+        <div class="small" style="margin-top:5pt; font-size:7.8pt;">$14.8M net profit. Regional empire.</div>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>RareOres · Targeting $15M+ Net Profit by Year 5</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">06</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 7 — VANTAGE EXPORTS · OVERVIEW ============== -->
+<section class="page" id="p7">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 05 · Chemical Commodities · Overview</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 78mm; gap:10mm; margin-top:6mm;">
+      <div>
+        <div class="section-no">§ 05</div>
+        <div class="eyebrow" style="margin-top:6pt;">Chemical Commodities Trading</div>
+        <h2 class="head" style="margin-top:5mm;">Vantage <em>Exports</em></h2>
+        <div class="tiny" style="margin-top:3mm;">Multi-Market Industrial Chemical Trading · TUR · PAK · ZAF · vantageexports.com</div>
+        <p class="lede" style="margin-top:5mm;">
+          Six industrial chemicals across three continents. Geographic arbitrage — sourced from China at FOB, delivered to markets with zero domestic production.
+        </p>
+      </div>
+      <div class="grid g-2" style="gap:3mm;">
+        <div class="card" style="padding:3.5mm;"><div class="tiny copper">Year 1 Revenue</div><div class="num" style="font-family:var(--serif); font-size:20pt; margin-top:4pt;">$2.5M</div></div>
+        <div class="card" style="padding:3.5mm;"><div class="tiny copper">Year 1 Net</div><div class="num" style="font-family:var(--serif); font-size:20pt; margin-top:4pt;">$572K</div></div>
+        <div class="card" style="padding:3.5mm;"><div class="tiny copper">Year 5 Revenue</div><div class="num" style="font-family:var(--serif); font-size:20pt; margin-top:4pt;">$22M</div></div>
+        <div class="card" style="padding:3.5mm;"><div class="tiny copper">Year 5 Net</div><div class="num" style="font-family:var(--serif); font-size:20pt; margin-top:4pt;">$6.2M</div></div>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:6mm 0 4mm;">
+    <h4 class="kicker">Core Product Portfolio · Six Industrial Chemicals</h4>
+
+    <table class="data" style="margin-top:4mm; font-size:8.4pt;">
+      <thead>
+        <tr>
+          <th style="width:24%;">Product</th>
+          <th style="width:14%;">Markets</th>
+          <th class="num" style="width:10%;">Margin</th>
+          <th class="num" style="width:13%;">$ / MT</th>
+          <th style="width:18%;">Annual Demand</th>
+          <th>Key Use Cases</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><b>DCM</b><div class="tiny" style="margin-top:2pt;">Dichloromethane</div></td><td>TUR · PAK</td><td class="num">33–47%</td><td class="num">$280–$340</td><td>43,000 MT/yr (TR)<br>8,000 MT/yr (PAK)</td><td>Paint remover · aerosol propellant · pharma solvent · adhesives</td></tr>
+        <tr><td><b>Chloroform</b><div class="tiny" style="margin-top:2pt;">CHCl₃</div></td><td>TUR · ZAF</td><td class="num">45–65%</td><td class="num">$420–$510</td><td>30,000 MT/yr (TR)<br>12,000 MT/yr (ZAF)</td><td>Refrigerant R-22 · pharma API · anaesthetic precursor · solvents</td></tr>
+        <tr><td><b>Toluene</b></td><td>TUR · PAK · ZAF</td><td class="num">28–40%</td><td class="num">$680–$780</td><td>85,000 MT/yr (TR)</td><td>Paint &amp; coating thinner · adhesive solvent · TDI (urethane) feed</td></tr>
+        <tr><td><b>Ethyl Acetate</b></td><td>TUR · PAK</td><td class="num">30–42%</td><td class="num">$820–$940</td><td>45,000 MT/yr (TR)</td><td>Food flavouring · printing inks · pharma · nail-polish remover</td></tr>
+        <tr><td><b>Acetone</b></td><td>TUR · ZAF</td><td class="num">25–38%</td><td class="num">$740–$840</td><td>60,000 MT/yr (TR)<br>20,000 MT/yr (ZAF)</td><td>Plastics · fibres · pharmaceuticals · cosmetics · electronics</td></tr>
+        <tr><td><b>Methanol</b></td><td>PAK · ZAF</td><td class="num">20–32%</td><td class="num">$320–$390</td><td>120,000 MT/yr (PAK)</td><td>Biodiesel · formaldehyde · fuel additive · chemical feedstock</td></tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="runfoot">
+    <div>Vantage Exports · Six Products · Three Continents</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">07</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 7B — VANTAGE EXPORTS · OPERATIONS & P&L ============== -->
+<section class="page" id="p7b">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 05 · Operations &amp; P&amp;L</div>
+    </div>
+
+    <div style="margin-top:6mm;">
+      <div class="section-no">§ 05 · Continued</div>
+      <div class="eyebrow" style="margin-top:6pt;">Three-Market Operations</div>
+      <h2 class="head" style="margin-top:5mm; font-size:24pt;">Operating across <em>Turkey</em>, <em>Pakistan</em> &amp; <em>South Africa.</em></h2>
+    </div>
+
+    <hr class="rule" style="margin:6mm 0 4mm;">
+
+    <div class="grid g-3" style="margin-top:4mm;">
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Turkey</h3>
+          <span class="tag copper">Operational</span>
+        </div>
+        <div class="tiny" style="margin-top:3pt;">Istanbul Hub · 3+ Years</div>
+        <p class="small" style="margin-top:5pt;">Primary and most advanced market. Istanbul Emaar Square Tower office (3+ years). Established suppliers, customs broker, bonded warehouse in Dilovası / Gebze.</p>
+        <table class="data" style="margin-top:5pt; font-size:7.4pt;">
+          <tbody><tr><td class="metric">DCM Import / yr</td><td class="num">43,000 MT</td></tr>
+          <tr><td class="metric">CHCl₃ Import / yr</td><td class="num">30,000 MT</td></tr>
+          <tr><td class="metric">Domestic Production</td><td class="num">Zero</td></tr>
+          <tr><td class="metric">Vantage Products</td><td class="num">4 active</td></tr>
+        </tbody></table>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Pakistan</h3>
+          <span class="tag copper">Operational</span>
+        </div>
+        <div class="tiny" style="margin-top:3pt;">Lahore &amp; Islamabad</div>
+        <p class="small" style="margin-top:5pt;">Domestic base. DCM &amp; toluene primary (SRO-compliant). DRAP NOC pathway for pharma-grade import. Distribution via Lahore chemicals market and direct factory sales.</p>
+        <table class="data" style="margin-top:5pt; font-size:7.4pt;">
+          <tbody><tr><td class="metric">DCM Import / yr</td><td class="num">8,000 MT</td></tr>
+          <tr><td class="metric">Methanol Market</td><td class="num">120,000 MT</td></tr>
+          <tr><td class="metric">Toluene Market</td><td class="num">25,000 MT</td></tr>
+          <tr><td class="metric">Products Targeting</td><td class="num">3</td></tr>
+        </tbody></table>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">South Africa</h3>
+          <span class="tag">Entry 2026</span>
+        </div>
+        <div class="tiny" style="margin-top:3pt;">Johannesburg</div>
+        <p class="small" style="margin-top:5pt;">High-margin emerging-market entry. No Asian competitor holds dominant share. Entry via JNB-based importer partnership. DMRE &amp; SARS compliance mapped.</p>
+        <table class="data" style="margin-top:5pt; font-size:7.4pt;">
+          <tbody><tr><td class="metric">CHCl₃ Market / yr</td><td class="num">12,000 MT</td></tr>
+          <tr><td class="metric">Acetone Market / yr</td><td class="num">20,000 MT</td></tr>
+          <tr><td class="metric">Growth Rate</td><td class="num">+9% CAGR</td></tr>
+          <tr><td class="metric">Products Targeting</td><td class="num">3</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:7mm 0 5mm;">
+    <h4 class="kicker">5-Year P&amp;L Projection · Vantage Exports (USD)</h4>
+    <table class="data" style="margin-top:4mm;">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th class="num">Y1</th><th class="num">Y2</th><th class="num">Y3</th><th class="num">Y4</th><th class="num">Y5</th>
+          <th class="num">CAGR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="metric">Revenue</td><td class="num">$2.5M</td><td class="num">$5.8M</td><td class="num">$11.2M</td><td class="num">$15.8M</td><td class="num">$22.0M</td><td class="num copper">+72%</td></tr>
+        <tr><td class="metric">Gross Profit</td><td class="num">$0.90M</td><td class="num">$2.2M</td><td class="num">$4.5M</td><td class="num">$6.6M</td><td class="num">$9.5M</td><td class="num copper">+80%</td></tr>
+        <tr><td class="metric">Gross Margin</td><td class="num">36%</td><td class="num">38%</td><td class="num">40%</td><td class="num">42%</td><td class="num">43%</td><td class="num">—</td></tr>
+        <tr><td class="metric">Net Profit</td><td class="num">$0.57M</td><td class="num">$1.4M</td><td class="num">$3.0M</td><td class="num">$4.5M</td><td class="num">$6.2M</td><td class="num copper">+81%</td></tr>
+        <tr><td class="metric">Countries</td><td class="num">3</td><td class="num">4</td><td class="num">5</td><td class="num">6</td><td class="num">7</td><td class="num">—</td></tr>
+        <tr><td class="metric">Products Active</td><td class="num">4</td><td class="num">6</td><td class="num">8</td><td class="num">10</td><td class="num">12</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="runfoot">
+    <div>Vantage Exports · $22M Revenue Target by Year 5</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">08</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 9 — TRACK RECORD ============== -->
+<section class="page" id="p8">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 06 · Portfolio Track Record</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:60mm 1fr; gap:12mm; margin-top:8mm;">
+      <div>
+        <div class="section-no">§ 06</div>
+        <div class="eyebrow" style="margin-top:6pt;">Portfolio</div>
+        <h2 class="head" style="margin-top:6mm; font-size:32pt;"><em>Executed.</em><br>Delivered.</h2>
+        <div class="bar-c" style="margin-top:6mm;"></div>
+        <p class="small" style="margin-top:5mm;">A selection of projects delivered across Vantage Group's twenty-year operating history.</p>
+        <div style="margin-top:6mm; display:grid; gap:3mm;">
+          <div class="kpi"><div class="v num">20<em>yr</em></div><div class="l">Operating History</div></div>
+          <div class="kpi"><div class="v num">0</div><div class="l">Failed Deliveries</div></div>
+          <div class="kpi"><div class="v">5</div><div class="l">Sectors Delivered</div></div>
+        </div>
+      </div>
+
+      <div>
+        <table class="data" style="font-size:8.4pt;">
+          <thead>
+            <tr>
+              <th style="width:30%;">Project</th>
+              <th style="width:18%;">Location · Status</th>
+              <th>Executive Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>Gold Crest Mall &amp; Residence</b><div class="tiny" style="margin-top:2pt;">Mixed-use Residential</div></td>
+              <td>DHA Lahore<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>Flagship mixed-use landmark. Vantage led strategic investment, pre-launch sales and marketing — achieving exceptional sell-out velocity. DHA's premier urban-lifestyle destination.</td>
+            </tr>
+            <tr>
+              <td><b>ASC Housing Overseas Enclave</b><div class="tiny" style="margin-top:2pt;">Master-Planned Residential</div></td>
+              <td>Nowshera<br><span class="tag copper" style="margin-top:2pt;">Active</span></td>
+              <td>Phase I &amp; II delivered. Phase III launch June 2026. 10,000+ Kanals · 6-yr delivery. Hospitals, theme park, educational institutes. <span class="num">vantagetown.com</span></td>
+            </tr>
+            <tr>
+              <td><b>Bankers Enclave — C Block</b><div class="tiny" style="margin-top:2pt;">100 Luxury Villas</div></td>
+              <td>Lahore<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>100 luxury villas delivered in a record one-year timeline. Complete sell-out achieved. Demonstrated full-cycle residential development &amp; marketing capability.</td>
+            </tr>
+            <tr>
+              <td><b>Pakistan Air Force Installations</b><div class="tiny" style="margin-top:2pt;">Defence · Multi-Site</div></td>
+              <td>Sargodha · Jacobabad · Bholari<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>Construction at Mushaff, Shahbaz, and Bholari Air Bases. Highest-security government mandates — demonstrating institutional trust.</td>
+            </tr>
+            <tr>
+              <td><b>Royal Embassy of Saudi Arabia</b><div class="tiny" style="margin-top:2pt;">Diplomatic</div></td>
+              <td>Islamabad<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>Facilities construction for the Royal Embassy of the Kingdom of Saudi Arabia. International protocol compliance. Highest standards of discretion and build quality.</td>
+            </tr>
+            <tr>
+              <td><b>Centre for Advanced Studies</b><div class="tiny" style="margin-top:2pt;">Institutional · Energy Research</div></td>
+              <td>NUST · Islamabad<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>Energy-research campus for Pakistan's premier technology university. Complex institutional construction to international academic specification.</td>
+            </tr>
+            <tr>
+              <td><b>Souk Al Arabia</b><div class="tiny" style="margin-top:2pt;">Commercial · Retail &amp; Hospitality</div></td>
+              <td>Budaiyyah · Bahrain<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>Premium retail &amp; hospitality mixed-use in Budaiyyah, Bahrain. GCC market construction capability demonstrated. International mandate, on time, on spec.</td>
+            </tr>
+            <tr>
+              <td><b>Gulberg City Center</b><div class="tiny" style="margin-top:2pt;">Commercial · High-Rise</div></td>
+              <td>Lahore<br><span class="tag" style="margin-top:2pt;">Delivered</span></td>
+              <td>Premium high-rise commercial development in Lahore's Gulberg financial district. Full development &amp; investment mandate. Strong pre-sales performance.</td>
+            </tr>
+            <tr>
+              <td><b>VantEdge Industrial Parks</b><div class="tiny" style="margin-top:2pt;">Industrial RE · WorkNest™</div></td>
+              <td>Punjab &amp; KPK<br><span class="tag copper" style="margin-top:2pt;">Active</span></td>
+              <td>Grade-A warehousing + WorkNest™ workforce residences. First sites in development. Investor subscriptions open. Multi-site pipeline confirmed across six corridors.</td>
+            </tr>
+            <tr>
+              <td><b>RareOres Platform</b><div class="tiny" style="margin-top:2pt;">Mineral Intelligence</div></td>
+              <td>Global<br><span class="tag copper" style="margin-top:2pt;">Active</span></td>
+              <td>Mineral intelligence and trading platform. Active mine positions: talc, emerald, coal, chromite, marble. International buyer network across 8 launch markets.</td>
+            </tr>
+            <tr>
+              <td><b>Vantage Exports</b><div class="tiny" style="margin-top:2pt;">Chemical Commodities</div></td>
+              <td>TUR · PAK · ZAF<br><span class="tag copper" style="margin-top:2pt;">Active</span></td>
+              <td>Multi-product chemical trading: DCM, Chloroform, Toluene, Ethyl Acetate, Acetone, Methanol. Three-country operation. Y1 net: $572K → Y5: $6.2M.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>Defence · Diplomatic · Institutional · Residential · Industrial</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">09</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 9 — GLOBAL PRESENCE ============== -->
+<section class="page" id="p9">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 07 · Global Presence &amp; Expansion</div>
+    </div>
+
+    <div style="margin-top:8mm;">
+      <div class="section-no">§ 07</div>
+      <div class="eyebrow" style="margin-top:6pt;">Global Presence &amp; Expansion Strategy</div>
+      <h2 class="head" style="margin-top:6mm;">Four Cities. <em>Three</em><br>Continents. Growing.</h2>
+      <p class="lede" style="margin-top:6mm; max-width:170mm;">Strategically positioned at the nexus of South-Asian growth capital, Southeast-Asian investment flows, GCC commodity markets and European trade infrastructure. Each office is an operational necessity — not a symbolic presence.</p>
+    </div>
+
+    <hr class="rule" style="margin:7mm 0 5mm;">
+
+    <div class="grid g-4" style="gap:0; border:.5pt solid var(--rule);">
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">PAK · HQ</div>
+        <h3 class="sub" style="margin-top:6pt;">Islamabad</h3>
+        <div class="tiny" style="margin-top:2pt;">F-7/1 · Capitol Hill Office</div>
+        <div style="margin-top:5mm; display:grid; gap:3pt;">
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Entity</span><br>Vantage Developers Pvt. Ltd.</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Function</span><br>Global Strategy &amp; Policy</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Coverage</span><br>Federal · Provincial · International</div>
+        </div>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">PAK · OPS</div>
+        <h3 class="sub" style="margin-top:6pt;">Lahore</h3>
+        <div class="tiny" style="margin-top:2pt;">DHA Phase 8 · Operations Hub</div>
+        <div style="margin-top:5mm; display:grid; gap:3pt;">
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Focus</span><br>Development &amp; Construction</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Brands</span><br>VantEdge · VantageTown</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Team</span><br>Full Pakistan Operations</div>
+        </div>
+      </div>
+      <div style="padding:5mm; border-right:.5pt solid var(--rule);">
+        <div class="tiny copper">MYS · APAC</div>
+        <h3 class="sub" style="margin-top:6pt;">Johor Bahru</h3>
+        <div class="tiny" style="margin-top:2pt;">Asia-Pacific Capital Office</div>
+        <div style="margin-top:5mm; display:grid; gap:3pt;">
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Focus</span><br>APAC Capital · Investor IR</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Advantage</span><br>Singapore Gateway</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Pipeline</span><br>Labuan GIFT Licence</div>
+        </div>
+      </div>
+      <div style="padding:5mm;">
+        <div class="tiny copper">TUR · TRADE</div>
+        <h3 class="sub" style="margin-top:6pt;">Istanbul</h3>
+        <div class="tiny" style="margin-top:2pt;">Emaar Square Tower · Floor 12</div>
+        <div style="margin-top:5mm; display:grid; gap:3pt;">
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Focus</span><br>Chemicals · Minerals · Trading</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Entity</span><br>Turkey LLC · 3+ Yrs Active</div>
+          <div class="small" style="font-size:7.8pt;"><span class="tiny copper">Gateway</span><br>EU · GCC · Central Asia</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule" style="margin:7mm 0 5mm;">
+    <h4 class="kicker">New-Market Entry Pipeline · 2025 → 2027</h4>
+
+    <div class="grid g-3" style="margin-top:4mm; gap:4mm;">
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Kenya · East Africa</h3>
+          <span class="tag copper">2025 Q4</span>
+        </div>
+        <p class="small" style="margin-top:4mm; font-size:7.8pt;">Chemical trade gateway for the East-African industrial corridor. Chloroform &amp; acetone supply to pharma manufacturers. Nairobi distribution partner identified.</p>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">UAE / Gulf</h3>
+          <span class="tag copper">2025 Q4</span>
+        </div>
+        <p class="small" style="margin-top:4mm; font-size:7.8pt;">GCC chemical re-export hub. Leveraging existing Dubai infrastructure for petrochemical distribution across GCC. Mineral re-export for RareOres.</p>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Kazakhstan</h3>
+          <span class="tag">2026 Q1</span>
+        </div>
+        <p class="small" style="margin-top:4mm; font-size:7.8pt;">Rare earth and uranium market access. KazMinerals partnership pipeline. RareOres institutional sourcing into Central Asia.</p>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Indonesia</h3>
+          <span class="tag">2026 Q2</span>
+        </div>
+        <p class="small" style="margin-top:4mm; font-size:7.8pt;">Southeast-Asia industrial chemicals. Second-largest ASEAN economy. Johor Bahru office as gateway. Methanol &amp; toluene primary products.</p>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Germany / EU</h3>
+          <span class="tag">2026 H2</span>
+        </div>
+        <p class="small" style="margin-top:4mm; font-size:7.8pt;">Branded chemical product entry ("Vantage Industrial" range). EU entry via Turkey manufacturing partner. Year-3+ revenue target: €2M+.</p>
+      </div>
+      <div class="card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;">
+          <h3 class="sub">Brazil / LATAM</h3>
+          <span class="tag">2027</span>
+        </div>
+        <p class="small" style="margin-top:4mm; font-size:7.8pt;">Emerging-market chemical corridor. Copper &amp; lithium mineral sourcing &amp; trading via South America. RareOres global expansion milestone.</p>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>Global Expansion · 10 Markets by 2027 · PAK · MYS · TUR · ZAF · GCC · EU</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">10</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 10 — LEADERSHIP ============== -->
+<section class="page" id="p10">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 08 · Senior Leadership</div>
+    </div>
+
+    <div style="margin-top:8mm; display:grid; grid-template-columns:1fr auto; gap:10mm; align-items:flex-end;">
+      <div>
+        <div class="section-no">§ 08</div>
+        <div class="eyebrow" style="margin-top:6pt;">Senior Leadership</div>
+        <h2 class="head" style="margin-top:6mm;">The team behind <em>the vision.</em></h2>
+      </div>
+      <div class="small" style="text-align:right; max-width:80mm;">
+        <div class="tiny">12 senior leaders</div>
+        <div style="margin-top:3pt; font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em; color:var(--ink-soft);">INSEAD · LSE · Wharton · Cambridge · UCL · MIT · Columbia · Goldman Sachs · JP Morgan · IFC World Bank</div>
+      </div>
+    </div>
+
+    <hr class="rule copper" style="margin:7mm 0 5mm;">
+
+    <div class="grid g-3" style="gap:4mm;">
+      <div class="leader-card">
+        <div class="av">OK</div>
+        <div>
+          <div class="nm">Omer Farooq Kayani</div>
+          <div class="tt">Chairman &amp; Founder</div>
+          <div class="lo">Islamabad · Istanbul · Johor Bahru</div>
+          <div class="bio">Founder and principal architect of the Vantage Group. Two decades spanning institutional real-estate development, global commodity trading, and capital allocation across three continents.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">ZK</div>
+        <div>
+          <div class="nm">Zafar Khan, MBA</div>
+          <div class="tt">Group Chief Executive Officer</div>
+          <div class="lo">Islamabad · INSEAD</div>
+          <div class="bio">MBA INSEAD, Fontainebleau. Former Managing Director, Standard Chartered Pakistan; Head of Corporate Finance, Citibank Pakistan. Group operating leadership.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">HA</div>
+        <div>
+          <div class="nm">Haris Ahmed, CFA · FRM</div>
+          <div class="tt">Group Chief Financial Officer</div>
+          <div class="lo">Islamabad · Johor Bahru</div>
+          <div class="bio">Dual-qualified CFA / FRM. Former VP, Deutsche Bank Singapore; Head of Treasury, Habib Bank. Group capital structure &amp; finance.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">NK</div>
+        <div>
+          <div class="nm">Nadia Khan, MSc</div>
+          <div class="tt">Chief Investment Officer</div>
+          <div class="lo">Islamabad · Istanbul · LSE</div>
+          <div class="bio">MSc Economics, London School of Economics. Former Senior Portfolio Manager at Abraaj Capital; Director, Emerging Markets, JP Morgan Asset Management.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">SK</div>
+        <div>
+          <div class="nm">Sheikh Kashif</div>
+          <div class="tt">Director, Construction &amp; Development</div>
+          <div class="lo">Lahore</div>
+          <div class="bio">20+ years delivering complex mandates across defence, diplomatic, institutional and residential sectors. Led delivery of the Group's flagship construction portfolio.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">AR</div>
+        <div>
+          <div class="nm">Ahmad Raza, CFA</div>
+          <div class="tt">VP Finance &amp; APAC Operations</div>
+          <div class="lo">Johor Bahru</div>
+          <div class="bio">CFA charterholder. Structured-finance background — Gulf Bank Kuwait and EFG Hermes Pakistan. Manages APAC capital, IR &amp; Labuan licensing pipeline.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">TM</div>
+        <div>
+          <div class="nm">Tariq Mahmood, LLM</div>
+          <div class="tt">Group General Counsel</div>
+          <div class="lo">Islamabad · London · Cambridge</div>
+          <div class="bio">LLM, University of Cambridge. Barrister-at-Law (Lincoln's Inn, London). Former Partner at Clifford Chance Pakistan Desk; counsel on $2B+ transactions.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">FZ</div>
+        <div>
+          <div class="nm">Ar. Fatima Zahra, M.Arch</div>
+          <div class="tt">Chief Design &amp; Planning Officer</div>
+          <div class="lo">Lahore · UCL</div>
+          <div class="bio">M.Arch, UCL Bartlett. Former Principal at Zaha Hadid Architects, London. Leads architectural vision, master-planning and design language across all Group developments.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">RI</div>
+        <div>
+          <div class="nm">Raza Ibrahim, MBA</div>
+          <div class="tt">Head of Minerals &amp; Commodities</div>
+          <div class="lo">Islamabad · Istanbul · Wharton</div>
+          <div class="bio">MBA, The Wharton School, University of Pennsylvania. Former Commodities Trader at Goldman Sachs London; Director of Mining Investments. Leads RareOres &amp; trading.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">AS</div>
+        <div>
+          <div class="nm">Ayesha Siddiqui, MA</div>
+          <div class="tt">Chief Marketing &amp; Communications</div>
+          <div class="lo">Islamabad · Columbia</div>
+          <div class="bio">MA Strategic Communications, Columbia University. Former Managing Director at Ogilvy Middle East; Head of Brand Strategy at a regional holding group.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">SI</div>
+        <div>
+          <div class="nm">Sara Idrees, CA</div>
+          <div class="tt">Group Head of Risk &amp; Compliance</div>
+          <div class="lo">Islamabad · Johor Bahru · ICAEW</div>
+          <div class="bio">Chartered Accountant, ICAEW. Former Director, Risk Advisory at KPMG London; Head of Compliance for a regional asset manager. Group risk framework owner.</div>
+        </div>
+      </div>
+      <div class="leader-card">
+        <div class="av">KM</div>
+        <div>
+          <div class="nm">Khalid Mirza, MSc</div>
+          <div class="tt">Chief Technology &amp; AI Officer</div>
+          <div class="lo">Islamabad · MIT</div>
+          <div class="bio">MSc Computer Science, MIT. Former Principal Data Scientist at Amazon Web Services; AI Lead at McKinsey Global Institute. Leads platform engineering for RareOres.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>Senior Leadership · 12 Members · Multi-Continent</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">11</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 11 — INVESTMENT THESIS ============== -->
+<section class="page" id="p11">
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
+      <div>§ 09 · Investment Thesis</div>
+    </div>
+
+    <div style="margin-top:8mm; display:grid; grid-template-columns:1fr 1fr; gap:14mm; align-items:flex-end;">
+      <div>
+        <div class="section-no">§ 09</div>
+        <div class="eyebrow" style="margin-top:6pt;">Investment Thesis</div>
+        <h2 class="head" style="margin-top:6mm;">Why <em>Vantage.</em><br>Why 2025.</h2>
+      </div>
+      <div class="lede" style="font-size:11pt; max-width:80mm; justify-self:end;">
+        Six structural reasons. One coordinated strategy. A Group built for compounding across asset classes and geographies — simultaneously.
+      </div>
+    </div>
+
+    <hr class="rule copper" style="margin:7mm 0 5mm;">
+
+    <div class="grid g-3" style="gap:4mm;">
+      <div class="card">
+        <div class="num" style="font-family:var(--serif); font-size:48pt; line-height:.9; color:var(--copper); font-weight:300;">01</div>
+        <h3 class="sub" style="margin-top:4mm;">Pakistan's Infrastructure Gap is the Arbitrage</h3>
+        <p class="small" style="margin-top:4mm;">The deficit of Grade-A industrial real estate, workforce housing and institutional logistics in Pakistan is not a risk — it is the return. First movers with execution capability command pricing premiums that evaporate once the category matures. VantEdge is building the category before the window closes.</p>
+      </div>
+      <div class="card">
+        <div class="num" style="font-family:var(--serif); font-size:48pt; line-height:.9; color:var(--copper); font-weight:300;">02</div>
+        <h3 class="sub" style="margin-top:4mm;">The Critical-Minerals Supercycle is Now</h3>
+        <p class="small" style="margin-top:4mm;">The energy transition requires copper, lithium, cobalt and rare earths at historically unprecedented industrial scale. Pakistan holds $6T+ in proven mineral endowment with near-zero institutional exploitation. RareOres is positioned to be the bridge — before the global majors arrive and absorb the economics.</p>
+      </div>
+      <div class="card">
+        <div class="num" style="font-family:var(--serif); font-size:48pt; line-height:.9; color:var(--copper); font-weight:300;">03</div>
+        <h3 class="sub" style="margin-top:4mm;">Chemical Arbitrage Across Three Continents</h3>
+        <p class="small" style="margin-top:4mm;">Turkey imports 43,000 MT of DCM per year with zero domestic production. South Africa imports 12,000 MT of chloroform with no Asian supplier dominant. Pakistan's methanol demand exceeds 120,000 MT. Vantage Exports captures 25–65% margin connecting supply to structural demand gaps.</p>
+      </div>
+      <div class="card">
+        <div class="num" style="font-family:var(--serif); font-size:48pt; line-height:.9; color:var(--copper); font-weight:300;">04</div>
+        <h3 class="sub" style="margin-top:4mm;">A Track Record That Cannot Be Fabricated</h3>
+        <p class="small" style="margin-top:4mm;">Defence installations. Diplomatic facilities. Institutional campuses. DHA partnerships. Twenty years. Zero failed deliveries. This is not a prospectus claim — it is a verifiable, public history of complex mandate execution. VantEdge and RareOres are not first projects; they are the next chapter.</p>
+      </div>
+      <div class="card">
+        <div class="num" style="font-family:var(--serif); font-size:48pt; line-height:.9; color:var(--copper); font-weight:300;">05</div>
+        <h3 class="sub" style="margin-top:4mm;">Asset Creation &amp; Trading Compound Each Other</h3>
+        <p class="small" style="margin-top:4mm;">The Group's dual mandate — creating hard assets while running an active global trading book — generates multiple simultaneous return streams. Real-estate appreciation, rental yield, mineral royalties, chemical trading margins and proprietary commodity positions are additive, not alternatives.</p>
+      </div>
+      <div class="card">
+        <div class="num" style="font-family:var(--serif); font-size:48pt; line-height:.9; color:var(--copper); font-weight:300;">06</div>
+        <h3 class="sub" style="margin-top:4mm;">Four Geographies. One Coordinated Strategy.</h3>
+        <p class="small" style="margin-top:4mm;">Lahore (asset creation, construction), Islamabad (government access, policy), Johor Bahru (ASEAN capital, Labuan licence), Istanbul (commodity trading, chemical distribution). Each office amplifies the others. No single-market dependency. Multi-geography compounding is structural — not accidental.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:8mm; padding:6mm 8mm; border:.5pt solid var(--copper); display:flex; justify-content:space-between; align-items:center; gap:8mm;">
+      <div class="sig" style="font-size:18pt;">"I create assets and trade global markets."</div>
+      <div class="tiny" style="white-space:nowrap;">Omer Farooq Kayani · Chairman &amp; Founder</div>
+    </div>
+  </div>
+  <div class="runfoot">
+    <div>Six Reasons. One Conclusion.</div>
+    <div>Strictly Private &amp; Confidential &nbsp;·&nbsp; <span class="num">12</span></div>
+  </div>
+</section>
+
+<!-- ============== PAGE 12 — CLOSING / CONTACT ============== -->
+<section class="page dark" id="p12">
+  <div class="wmark num">12</div>
+  <div class="frame">
+    <div class="runhead">
+      <div class="mark"><svg class="vsvg" style="color:#e7e1d2"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span style="color:#7c8691;">DEVELOPMENTS</span></div>
+      <div>Transaction Enquiries</div>
+    </div>
+
+    <div style="margin-top:14mm;">
+      <div class="eyebrow" style="color:var(--copper-soft);">Closing</div>
+      <h1 class="display" style="margin-top:8mm; color:#f1ead9; font-size:64pt; line-height:.95;">
+        Ready to build<br>
+        something <em>lasting.</em>
+      </h1>
+      <p class="lede" style="margin-top:8mm; max-width:140mm; color:#cdd1d6;">
+        We are selective about who we build with. The investors who work with Vantage will find a group that executes precisely what it proposes, communicates with directness, and compounds returns across multiple asset classes and geographies simultaneously.
+      </p>
+    </div>
+
+    <hr class="rule" style="margin:9mm 0 5mm; border-color:#2a3a48;">
+
+    <div class="grid g-2" style="gap:10mm;">
+      <div>
+        <div class="eyebrow" style="color:var(--copper-soft);">Next Steps for Prospective Investors</div>
+        <div class="steps" style="margin-top:5mm; border-color:#2a3a48; grid-template-columns:repeat(5,1fr);">
+          <div class="step" style="border-right-color:#2a3a48;">
+            <div class="n">01</div><div class="t" style="color:#f1ead9;">NDA</div>
+            <div class="d" style="color:#aeb6be;">Mutual NDA signed.</div>
+          </div>
+          <div class="step" style="border-right-color:#2a3a48;">
+            <div class="n">02</div><div class="t" style="color:#f1ead9;">Detailed IM</div>
+            <div class="d" style="color:#aeb6be;">Vertical-specific IM issued.</div>
+          </div>
+          <div class="step" style="border-right-color:#2a3a48;">
+            <div class="n">03</div><div class="t" style="color:#f1ead9;">Site Visit</div>
+            <div class="d" style="color:#aeb6be;">Chairman intro &amp; site visits.</div>
+          </div>
+          <div class="step" style="border-right-color:#2a3a48;">
+            <div class="n">04</div><div class="t" style="color:#f1ead9;">Term Sheet</div>
+            <div class="d" style="color:#aeb6be;">Returns &amp; structure agreed.</div>
+          </div>
+          <div class="step">
+            <div class="n">05</div><div class="t" style="color:#f1ead9;">Execution</div>
+            <div class="d" style="color:#aeb6be;">Capital deployed. Onboarded.</div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <hr class="rule" style="margin:9mm 0 5mm; border-color:#2a3a48;">
+
+    <div class="grid g-4" style="gap:8mm;">
+      <div>
+        <div class="tiny" style="color:#7c8691;">Primary Contact</div>
+        <div style="font-family:var(--serif); font-size:14pt; color:#f1ead9; margin-top:4pt;">Omer Farooq Kayani</div>
+        <div class="small" style="color:#aeb6be; margin-top:2pt; font-size:8pt;">Chairman &amp; Founder</div>
+        <div class="small" style="color:#cdd1d6; margin-top:8pt; font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em;">connect@vantagedevelopers.com.pk</div>
+      </div>
+      <div>
+        <div class="tiny" style="color:var(--copper-soft);">Lahore HQ</div>
+        <div style="font-family:var(--serif); font-size:11pt; color:#f1ead9; margin-top:4pt;">DHA Phase 8</div>
+        <div class="small" style="color:#aeb6be; margin-top:2pt; font-size:8pt;">Lahore, Pakistan</div>
+        <div class="tiny" style="color:var(--copper-soft); margin-top:6pt;">Islamabad</div>
+        <div style="font-family:var(--serif); font-size:11pt; color:#f1ead9; margin-top:4pt;">F-7/1</div>
+        <div class="small" style="color:#aeb6be; margin-top:2pt; font-size:8pt;">Islamabad, Pakistan</div>
+      </div>
+      <div>
+        <div class="tiny" style="color:var(--copper-soft);">Malaysia</div>
+        <div style="font-family:var(--serif); font-size:11pt; color:#f1ead9; margin-top:4pt;">Johor Bahru</div>
+        <div class="small" style="color:#aeb6be; margin-top:2pt; font-size:8pt;">Johor, Malaysia</div>
+        <div class="tiny" style="color:var(--copper-soft); margin-top:6pt;">Istanbul</div>
+        <div style="font-family:var(--serif); font-size:11pt; color:#f1ead9; margin-top:4pt;">Emaar Square Tower · 12F</div>
+        <div class="small" style="color:#aeb6be; margin-top:2pt; font-size:8pt;">Istanbul, Türkiye</div>
+      </div>
+      <div>
+        <div class="tiny" style="color:var(--copper-soft);">Web</div>
+        <div class="small" style="color:#cdd1d6; margin-top:4pt; font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em; line-height:1.7;">
+          vantagedevelopers.com.pk<br>
+          vantagetown.com<br>
+          vantedge.com<br>
+          rareores.com<br>
+          vantageexports.com
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:auto; padding-top:6mm;">
+      <hr class="rule" style="margin:0 0 5mm; border-color:#2a3a48;">
+      <div class="small" style="font-size: 7.4pt; line-height: 1.5; color: rgb(124, 134, 145); padding: 5px 0px 0px;" data-cc-id="cc-2" data-qb-tmp-id="lt-767444" spellcheck="false" data-gramm="false">
+        <b style="color:#aeb6be; letter-spacing:.12em; font-family:var(--mono); font-size:7pt; text-transform:uppercase;">Important Notice.</b>&nbsp; This Corporate Investor Profile has been prepared by Vantage Group Developments solely for the information of the named recipient and may not be reproduced or redistributed. It does not constitute an offer to sell, or a solicitation to purchase, any security or investment. Financial projections are forward-looking estimates based on management assumptions and do not constitute a guarantee of performance. Recipients should conduct independent due diligence and consult their own legal, tax, and financial advisers before making any investment decision. Past performance is not indicative of future results. Vantage Developers Pvt. Ltd. (VDL) is registered in Pakistan.
+      </div>
+    </div>
+  </div>
+
+  <div class="strap">
+    <div><span class="dot"></span>Islamabad (HQ) &nbsp;·&nbsp; Lahore &nbsp;·&nbsp; Johor Bahru &nbsp;·&nbsp; Istanbul &nbsp;·&nbsp; 2025</div>
+    <div>Page <span class="num" style="color:#f1ead9;">13</span> &nbsp;/&nbsp; 13</div>
+  </div>
+</section>
+
+</div>
+
+
+
+<qb-toolbar contenteditable="false" class="qb--mac-os" id="qb-toolbar-container" style="display: none;"><qb-div class="qb-toolbar__wrapper qb-toolbar--small" style="left: 795px; position: absolute !important; top: 13537px !important; bottom: auto !important; z-index: 2; opacity: 1 !important; pointer-events: all !important;"><div style="all: initial !important;"><qb-div style="all: initial !important;"></qb-div></div></qb-div></qb-toolbar></body></html>
