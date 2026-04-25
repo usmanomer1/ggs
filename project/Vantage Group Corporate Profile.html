@@ -266,12 +266,6 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
 /* cover hero */
 .hero-rule{ width:100%; border-top:.75pt solid var(--copper); margin:8mm 0; }
 
-/* watermark numerals on covers */
-.wmark{
-  position:absolute; right:-30mm; bottom:-30mm; font-family:var(--serif); font-weight:300; color:rgba(255,255,255,.04);
-  font-size:380pt; line-height:.85; letter-spacing:-.04em; pointer-events:none;
-}
-
 @media print{
   body{ background:#fff; padding:0; }
   .deck{ gap:0; }
@@ -299,7 +293,6 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
 
 <!-- ============== PAGE 1 — COVER ============== -->
 <section class="page dark" id="p1">
-  <div class="wmark num">25</div>
   <div class="frame">
     <div class="runhead">
       <div class="mark"><svg class="vsvg" style="color:#e7e1d2"><use href="#vmark"></use></svg><b>VANTAGE&nbsp;GROUP</b><span style="color:#7c8691">DEVELOPMENTS</span></div>
@@ -345,25 +338,25 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
 </section>
 
 <!-- ============== PAGE 2 — GROUP OVERVIEW ============== -->
-<section class="page" id="p2">
+<section class="page fit-1" id="p2">
   <div class="frame">
     <div class="runhead">
       <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
       <div>Corporate Investor Profile · 2025</div>
     </div>
 
-    <div style="display:grid; grid-template-columns:54mm 1fr; gap:12mm; margin-top:8mm;">
+    <div style="display:grid; grid-template-columns:54mm 1fr; gap:12mm; margin-top:5mm;">
       <div>
         <div class="section-no">§ 01</div>
-        <div class="eyebrow" style="margin-top:6pt;">Group Overview</div>
-        <h2 class="head" style="margin-top:10mm;">Building <em>Assets.</em><br>Trading <em>Markets.</em></h2>
-        <div class="bar-c" style="margin-top:8mm;"></div>
-        <div class="small" style="margin-top:5mm; max-width:48mm;">
+        <div class="eyebrow" style="margin-top:5pt;">Group Overview</div>
+        <h2 class="head" style="margin-top:6mm;">Building <em>Assets.</em><br>Trading <em>Markets.</em></h2>
+        <div class="bar-c" style="margin-top:5mm;"></div>
+        <div class="small" style="margin-top:4mm; max-width:48mm; font-size:7.6pt;">
           A privately held, multi-sector investment and development group with a twenty-year track record across Pakistan, Malaysia &amp; Turkey.
         </div>
       </div>
 
-      <div class="body" style="font-size:9.6pt;">
+      <div class="body" style="font-size:9pt; line-height:1.36;">
         <p>Vantage Group Developments is a privately held, multi-sector investment and development group with a twenty-year track record of creating institutional-grade real estate, industrial infrastructure, and global trading operations across Pakistan, Malaysia, and Turkey.</p>
         <p>Founded by Chairman <b>Omer Farooq Kayani</b>, the Group operates through Vantage Developers Pvt. Ltd. (VDL) — headquartered in Islamabad, Pakistan's federal capital — deploying capital and expertise across five distinct verticals from four international offices.</p>
         <p>The mandate is disciplined in ambition: identify structural opportunity across real estate cycles, industrial gaps, critical-minerals markets, and global commodity flows — and convert that intelligence into lasting, compounding assets.</p>
@@ -372,10 +365,10 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
       </div>
     </div>
 
-    <hr class="rule" style="margin:10mm 0 6mm;">
+    <hr class="rule" style="margin:6mm 0 4mm;">
     <div class="eyebrow">Group Divisions</div>
 
-    <div class="grid g-5" style="margin-top:5mm; gap:0; border:.5pt solid var(--rule);">
+    <div class="grid g-5" style="margin-top:4mm; gap:0; border:.5pt solid var(--rule);">
       <!-- 5 division cards -->
       <div style="padding:5mm; border-right:.5pt solid var(--rule);">
         <div class="tiny copper">01 · B2C</div>
@@ -409,7 +402,7 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
       </div>
     </div>
 
-    <hr class="rule" style="margin:10mm 0 6mm;">
+    <hr class="rule" style="margin:6mm 0 4mm;">
 
     <div class="grid g-5" style="margin-top:0; gap:6mm;">
       <div class="kpi"><div class="v num">20<em>+</em></div><div class="l">Years Operation</div></div>
@@ -419,7 +412,7 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
       <div class="kpi"><div class="v">$<em>B+</em></div><div class="l">Multi-Sector Portfolio</div></div>
     </div>
 
-    <div style="margin-top:auto; padding-top:8mm;" class="grid g-4">
+    <div style="margin-top:auto; padding-top:5mm;" class="grid g-4">
       <div>
         <div class="tiny">VantageTown</div>
         <div class="small" style="font-family:var(--mono); font-size:7.6pt; letter-spacing:.06em;">vantagetown.com</div>
@@ -446,49 +439,49 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
 </section>
 
 <!-- ============== PAGE 3 — CHAIRMAN'S STATEMENT ============== -->
-<section class="page" id="p3">
+<section class="page fit-1" id="p3">
   <div class="frame">
     <div class="runhead">
       <div class="mark"><svg class="vsvg"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span>DEVELOPMENTS</span></div>
       <div>§ 02 · Chairman's Statement</div>
     </div>
 
-    <div style="display:grid; grid-template-columns:60mm 1fr; gap:14mm; margin-top:10mm; flex:1;">
+    <div style="display:grid; grid-template-columns:55mm 1fr; gap:10mm; margin-top:6mm; flex:1;">
       <div>
         <div style="aspect-ratio:3/4; overflow:hidden; border:.5pt solid var(--rule); background:var(--paper-2);">
           <img src="assets/chairman.jpg" alt="Omer Farooq Kayani — Chairman & Founder" style="width:100%; height:100%; object-fit:cover; object-position:center 22%; filter:grayscale(.18) contrast(1.05) saturate(.85);" />
         </div>
-        <div style="margin-top:6mm;">
+        <div style="margin-top:5mm;">
           <div class="tiny copper">Chairman &amp; Founder</div>
-          <div class="sig" style="margin-top:6pt;">Omer F. Kayani</div>
-          <div class="small" style="margin-top:4pt; font-family:var(--mono); font-size:7pt; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute);">Islamabad · Lahore · Johor Bahru · Istanbul</div>
+          <div class="sig" style="margin-top:5pt; font-size:18pt;">Omer F. Kayani</div>
+          <div class="small" style="margin-top:3pt; font-family:var(--mono); font-size:6.6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute);">Islamabad · Lahore · Johor Bahru · Istanbul</div>
         </div>
-        <div style="margin-top:8mm;">
+        <div style="margin-top:5mm;">
           <hr class="rule copper">
-          <div class="tiny" style="margin-top:6pt;">Reading time</div>
-          <div class="num" style="font-family:var(--serif); font-size:18pt; line-height:1; margin-top:4pt;">3 min</div>
+          <div class="tiny" style="margin-top:5pt;">Reading time</div>
+          <div class="num" style="font-family:var(--serif); font-size:16pt; line-height:1; margin-top:3pt;">3 min</div>
         </div>
       </div>
 
       <div>
         <div class="section-no">§ 02</div>
-        <div class="eyebrow" style="margin-top:6pt;">A Direct Communication</div>
-        <h2 class="head" style="margin-top:6mm; font-size:30pt;">From the desk of<br>the <em>Chairman</em>.</h2>
-        <hr class="rule copper" style="margin:8mm 0;">
+        <div class="eyebrow" style="margin-top:5pt;">A Direct Communication</div>
+        <h2 class="head" style="margin-top:4mm; font-size:26pt;">From the desk of<br>the <em>Chairman</em>.</h2>
+        <hr class="rule copper" style="margin:5mm 0;">
 
-        <div class="body" style="font-size:9.5pt;">
+        <div class="body" style="font-size:9pt; line-height:1.36;">
           <p>The Vantage Group was built on a conviction that still holds: Pakistan's transformation into a multi-trillion-dollar economy is not a question of <em>whether</em> — it is a question of <em>when</em>. Those who build the right assets, in the right structures, positioned on the right themes today will disproportionately capture that transformation.</p>
           <p>Since our establishment we have delivered across residential communities, government defence infrastructure, diplomatic facilities, and institutional mandates. We built with DHA. We built for the Pakistan Air Force. We built for the Royal Embassy of the Kingdom of Saudi Arabia. Our track record is concrete, verifiable, and public — not a prospectus claim.</p>
           <p>We are now entering a more ambitious chapter. <b>VantEdge Parks</b> brings institutional-grade industrial real estate to Pakistani markets that have never seen it. <b>RareOres</b> positions the Group as Pakistan's first institutional mineral-intelligence platform at the precise moment the world is racing for critical minerals. <b>Vantage Exports</b> is building a multi-product chemical trading operation spanning Turkey, Pakistan and South Africa — three markets, six products, exponential margins.</p>
           <p>Our Malaysia office in Johor Bahru is an operational choice, not a symbol. Johor sits at the gateway of Southeast Asian capital flows, adjacent to Singapore's financial infrastructure and ASEAN's most dynamic growth corridor. It gives the Group a permanent foothold in Asia's most important emerging investment zone.</p>
           <p>We are selective about who we build with. We do not seek volume of capital — we seek alignment of vision. The investors who work with Vantage will find a group that executes precisely what it proposes, communicates with directness, and compounds returns across multiple asset classes and geographies simultaneously.</p>
-          <p style="margin-top:10pt;"><em>I create assets and trade global markets. Everything Vantage builds serves that singular mission.</em></p>
+          <p style="margin-top:8pt;"><em>I create assets and trade global markets. Everything Vantage builds serves that singular mission.</em></p>
         </div>
 
-        <div style="margin-top:10mm; display:flex; justify-content:space-between; align-items:flex-end; border-top:.5pt solid var(--rule); padding-top:6mm;">
+        <div style="margin-top:6mm; display:flex; justify-content:space-between; align-items:flex-end; border-top:.5pt solid var(--rule); padding-top:4mm;">
           <div>
-            <div class="sig">Omer Farooq Kayani</div>
-            <div class="tiny" style="margin-top:4pt;">Chairman &amp; Founder · Vantage Group Developments</div>
+            <div class="sig" style="font-size:18pt;">Omer Farooq Kayani</div>
+            <div class="tiny" style="margin-top:3pt;">Chairman &amp; Founder · Vantage Group Developments</div>
           </div>
           <div class="tiny">2025</div>
         </div>
@@ -520,7 +513,7 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
         </p>
       </div>
       <div style="aspect-ratio:1/1; overflow:hidden; border:.5pt solid var(--rule); background:var(--paper-2);">
-        <img src="assets/vantedge-park-clean.png" alt="VantEdge Park — isometric" style="width:100%; height:100%; object-fit:cover; object-position:center;" />
+        <img src="assets/vantedge-park-clean.jpg" alt="VantEdge Park — isometric" style="width:100%; height:100%; object-fit:cover; object-position:center;" />
       </div>
     </div>
 
@@ -612,7 +605,7 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
       </div>
       <div>
         <div style="aspect-ratio:3/4; overflow:hidden; border:.5pt solid var(--rule); background:var(--paper-2);">
-          <img src="assets/rareores-map-clean.png" alt="Active mine positions across Pakistan" style="width:100%; height:100%; object-fit:cover; object-position:center;" />
+          <img src="assets/rareores-map-clean.jpg" alt="Active mine positions across Pakistan" style="width:100%; height:100%; object-fit:cover; object-position:center;" />
         </div>
         <div class="grid g-2" style="gap:4mm; margin-top:4mm;">
           <div class="card" style="padding:4mm;">
@@ -1407,7 +1400,6 @@ table.data td.metric{ font-family:var(--mono); font-size:7.6pt; letter-spacing:.
 
 <!-- ============== PAGE 12 — CLOSING / CONTACT ============== -->
 <section class="page dark fit-1" id="p12">
-  <div class="wmark num">12</div>
   <div class="frame">
     <div class="runhead">
       <div class="mark"><svg class="vsvg" style="color:#e7e1d2"><use href="#vmark"></use></svg><b>VANTAGE GROUP</b><span style="color:#7c8691;">DEVELOPMENTS</span></div>
